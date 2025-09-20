@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Font-Face Example</title>
+    <style>
+        @font-face {
+            font-family: 'Darkhorse'; 
+            src: url('fonts/darkh4.eot');
+            src: local('Darkhorse'),
+                 url('fonts/darkh4.ttf') format('truetype');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Darkhorse', sans-serif;
+            font-size: 4em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Darkhorse Font</h1>
+    <p>This heading is styled using the @font-face rule to load the "darkh4" font files.</p>
+
+</body>
+</html>
