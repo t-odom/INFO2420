@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice 6 - Tables</title>
+    <style type="text/css">
+        .centerDiv {
+            text-align: center;
+        }
+
+        .scheduleTable {
+            margin: auto;
+            width: 550px;
+            border-collapse: separate;
+            border-spacing: 5px;
+            border: 1px solid black;
+        }
+
+        .captionStyle {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #003300; /* Changed the title text color to dark green */
+            padding-bottom: 10px;
+        }
+
+        .courseColumn {
+            background-color: #CCCCCC;
+            width: 15%;
+            font-weight: bold;
+        }
+
+        .dayHeaders {
+            background-color: #99FF66; /* Reverted to original light green */
+            font-weight: bold;
+        }
+        
+        .scheduleTable th, .scheduleTable td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="centerDiv">
+    <table class="scheduleTable">
+        <caption class="captionStyle">My Class Schedule</caption>
+
+        <colgroup>
+            <col class="courseColumn">
+            <col span="5">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th class="courseColumn">Courses</th>
+                <th class="dayHeaders">Monday</th>
+                <th class="dayHeaders">Tuesday</th>
+                <th class="dayHeaders">Wednesday</th>
+                <th class="dayHeaders">Thursday</th>
+                <th class="dayHeaders">Friday</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td class="courseColumn">INFO 1120</td>
+                <td></td>
+                <td>9-11</td>
+                <td></td>
+                <td>9-11</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td class="courseColumn">MATH 1010</td>
+                <td colspan="4">12-1</td>
+            </tr>
+            <tr>
+                <td class="courseColumn">INFO 2420</td>
+                <td colspan="5">Online Available 24/7</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
