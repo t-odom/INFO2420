@@ -38,6 +38,32 @@
             font-style: italic;
             margin-left: 40px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        caption {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            padding: 10px;
+            color: #3B7B8E;
+            border: 2px solid #3B7B8E;
+            border-radius: 8px;
+            caption-side: top;
+            margin-bottom: 10px;
+        }
+        th {
+            background-color: #3B7B8E;
+            color: #F8F7F4;
+            padding: 12px;
+            font-size: 1.1em;
+        }
+        td {
+            border: 1px solid #3B7B8E;
+            padding: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -101,6 +127,41 @@
     <p><a href="#top">Return to Top</a></p>
 
     <hr>
+
+    <h2>Sale Prices this Week</h2>
+    <table>
+        <caption>Rental Prices</caption>
+        <tr>
+            <th>Pet Type</th>
+            <th>Regular Price (per day)</th>
+            <th>Sale Price (per day)</th>
+        </tr>
+        <tr>
+            <td>Dogs</td>
+            <td>$48</td>
+            <td>$36</td>
+        </tr>
+        <tr>
+            <td>Cats</td>
+            <td>$40</td>
+            <td>$30</td>
+        </tr>
+        <tr>
+            <td>Horses</td>
+            <td>$150</td>
+            <td>$110</td>
+        </tr>
+        <tr>
+            <td>Pigs</td>
+            <td>$48</td>
+            <td>$39</td>
+        </tr>
+        <tr>
+            <td>Snakes</td>
+            <td>$36</td>
+            <td>$24</td>
+        </tr>
+    </table>
 
     <h2 id="press">Press Releases</h2>
     <h3>Horse and Hound Magazine, January 20, 2011:</h3>
