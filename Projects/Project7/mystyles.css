@@ -1,0 +1,177 @@
+/* BASE STYLES (FROM PROJECT 3) */
+body {
+    background-color: #F8F7F4;
+    color: #2A3D45;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+h1, h2, h3 {
+    color: #3B7B8E;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:link {
+    color: #E88D39;
+    text-decoration: none;
+}
+a:visited {
+    color: #D3741E;
+}
+a:hover {
+    text-decoration: underline;
+}
+.float-left {
+    float: left;
+    padding: 0 15px 10px 0;
+}
+.float-right {
+    float: right;
+    padding: 0 0 10px 15px;
+}
+blockquote {
+    font-style: italic;
+    margin-left: 40px;
+}
+
+/* PROJECT 6 IMAGE SWAP CONTAINER STYLES */
+#thumbs, #image {
+    width: 700px; 
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #000;
+}
+#thumbs {
+    margin-top: 10px;
+}
+#thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+}
+#image{
+    height: 400px;
+}
+.instructions{
+    font-style:italic;
+}
+
+/* PROJECT 7 LAYOUT STYLES - WITH ABSOLUTE POSITIONING */
+#container {
+    width: 900px;
+    margin: 0 auto; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+}
+
+header {
+    width: 900px; 
+    height: 175px; 
+    background-color: #3B7B8E;
+    /* FIX: Position relative allows us to anchor the nav inside perfectly */
+    position: relative; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+/* LOGO */
+#logo-rollover {
+    float: left;
+    margin: 10px 0 0 15px; /* Adjust margin for placement */
+}
+
+/* BANNER */
+#banner {
+    float: left;
+    margin-top: 20px;
+    /* Ensure banner doesn't overlap nav area */
+    max-width: 450px; 
+    height: auto;
+}
+
+/* NAVIGATION - ABSOLUTE POSITIONING FIX */
+nav {
+    /* Anchors the nav to the bottom right, ignoring other elements */
+    position: absolute;
+    bottom: 15px; 
+    right: 15px;
+    width: auto; /* Width grows with content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left; /* Aligns buttons horizontally */
+    margin-left: 5px;
+}
+
+/* BUTTON STYLING */
+nav a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #E88D39; 
+    color: #2A3D45; 
+    text-decoration: none;
+    font-size: 1.1em; 
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap; /* Prevents text from wrapping inside button */
+}
+
+nav a:hover {
+    background-color: #D3741E; 
+    color: #F8F7F4; 
+    text-decoration: none;
+}
+
+/* SECTION & ARTICLE ALIGNMENT */
+section {
+    width: 900px;
+    background-image: url('Images/2colback.jpg'); 
+    background-repeat: repeat-y;
+    padding: 20px 0;
+    overflow: hidden; 
+}
+
+article {
+    width: 600px; 
+    float: right; 
+    margin-right: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+article p {
+    text-align: left; 
+    line-height: 1.5;
+}
+
+.mini-tribute {
+    padding: 10px;
+    overflow: hidden; 
+    margin-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+.mini-tribute .tribute-img {
+    float: left;
+    margin-right: 15px;
+    width: 150px; 
+    height: auto;
+}
+
+footer {
+    width: 900px;
+    height: 40px; 
+    background-color: #2A3D45; 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #E88D39; 
+    text-decoration: none;
+}
